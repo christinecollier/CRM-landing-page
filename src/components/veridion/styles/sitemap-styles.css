@@ -1,0 +1,54 @@
+@import './main-styles.css';
+
+.sitemap-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+    margin-right: auto;
+    margin-bottom: clamp(3rem, 7vw, 10rem);
+}
+
+.sitemap-section {
+    margin-block: 0.5rem;
+    margin-inline: 0 auto;
+    width: 25%;
+    /* min-width: 173px; */
+    height: 100%;
+    font-size: var(--mid-captions);
+}
+
+.sitemap-section span {
+    display: flex;
+    justify-content: start;
+    font-weight: 600;
+    line-height: 2.5rem;
+    color: hsl(0, 0%, 45%);
+}
+
+.sitemap-section ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sitemap-section ul li {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding-block: 0.25rem;
+    transition: color 400ms;
+    cursor: pointer;
+    &:hover {
+        color: var(--light-blue);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sitemap-container {
+        width: 80%;
+    }
+    .sitemap-section {
+        width: 50%;
+    }
+}

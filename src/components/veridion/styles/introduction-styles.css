@@ -1,0 +1,152 @@
+@import './main-styles.css';
+
+
+.introduction-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: var(--white-text);
+}
+
+.introduction-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: var(--max-width);
+    flex-wrap: wrap;
+    padding: 2rem var(--side-padding) ;
+    color: var(--dark-grey);
+}
+
+.introduction-container #intro-title-container {
+    opacity: 0;
+    width: 100%;
+    margin: min(5vw, 2rem) 1rem;
+    font-size: var(--large-captions);
+    font-weight: 600;
+    text-align: start;
+    min-height: min(10vw, 62px);
+}
+
+/* .introduction-container h2 .title-colour-emphasis {
+    background: linear-gradient(to right, var(--light-blue) 20%, var(--light-purple));
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;    
+} */
+
+/*Analytics section*/
+
+.analytics-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(1rem, 2vw, 2rem);
+
+}
+
+.analytics-container .catchphrase {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    text-align: start;
+    width: 45%;
+    font-size: var(---large-mid-captions);
+    font-weight: 400;
+    padding: 1rem;
+    margin-block: 0.5rem;
+}
+
+.catchphrase .catchphrase-subheading {
+    text-align: start;
+    width: 100%;
+    font-size: var(--large-mid-captions);
+    font-weight: 600;
+    color: var(--charcoal-grey);
+    padding-block: 1rem 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.catchphrase p {
+    width: 100%;
+}
+
+.analytics-tab-container {
+    width: 50%;
+    max-width: 500px;
+    display: grid;
+    grid-template: repeat(1fr, 5) / repeat(1fr, 3);
+    column-gap: 1rem;
+}
+
+.analytics-tab-container .analytics-tabs {
+    border-radius: 0.75rem;
+    border: 1px solid hsl(0, 0%, 90%);
+}
+
+.analytics-tab-container .analytics-tabs.tab-1 {
+    grid-area: 1 / 2 / span 3 / span 2;
+    width: 90%;
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.analytics-tab-container .analytics-tabs.tab-2 {
+    grid-area: 3 / 1 / span 3 / span 2;
+    width: 90%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+/*Notebook section*/
+
+.pilot-to-prod {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding-block: 1rem 2rem;
+    padding-inline: 1.5rem;
+    margin: 3rem 1rem;
+    background-size: 10px 10px;
+    background-image:
+    linear-gradient(to right, hsl(0, 0%, 93%) 1px, transparent 1px),
+    linear-gradient(to bottom, hsl(0, 0%, 93%) 1px, transparent 1px);
+}
+
+.pilot-to-prod .pilot-to-prod-header {
+    width: 100%; 
+    margin-block: min(5vw, 2rem) min(2vw, 1.25rem);
+    font-size: clamp(27px, 5vw, 38px);
+    font-weight: 400;
+    text-align: start;
+}
+
+.pilot-to-prod p {
+    width: 100%;
+    /* max-width: 50rem; */
+    text-align: start;
+    margin-block: 1rem 0.5rem;
+}
+
+.pilot-to-prod span {
+    width: 100%;
+    /* max-width: 50rem; */
+    text-align: start;
+    font-size: var(--base-captions);
+    padding-block: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 840px) {
+    .analytics-container .catchphrase {
+        width: 100%;
+    }
+    .analytics-container .analytics-tab-container {
+        width: 80%;
+    }
+}

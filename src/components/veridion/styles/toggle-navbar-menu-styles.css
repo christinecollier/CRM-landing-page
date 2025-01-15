@@ -1,0 +1,41 @@
+@import './main-styles.css';
+
+.toggle-container {
+    position: fixed;
+    top: 2rem;
+    right: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: clamp(1.25rem, 2.5vw, 1.75rem);
+    aspect-ratio: 1 / 1 ;
+    cursor: pointer;
+}
+
+.visible {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 3 / 1;
+}
+
+.line {
+    height: calc(100% / 3);
+    width: 100%;
+    border-top: 2px solid var(--dark-grey);
+}
+
+@media (max-width: 840px) {
+    .toggle-container {
+        display: flex;
+    }
+}

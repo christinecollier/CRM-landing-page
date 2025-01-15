@@ -1,0 +1,139 @@
+@import './main-styles.css';
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: var(--white-text);
+    width: 100%;
+    padding: 2rem;
+    color: var(--charcoal-grey);
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 43rem;
+    margin-block: 3rem;
+}
+
+.form-container h2 {
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: start;
+    /* background: linear-gradient(to right, var(--light-blue) 20%, var(--light-purple));
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;  */
+}
+
+.form-container p {
+    text-align: start;
+    margin-bottom: 3rem;
+    font-size: var(--mid-captions);
+}
+
+.form-area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    row-gap: clamp(1rem, 2vw, 2rem);
+}
+
+.personal-details {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: clamp(1rem, 2vw, 2rem); */
+    width: 40%;
+}
+
+label {
+    font-size: var(--mid-captions);
+    margin-bottom: 0.25rem;
+}
+
+.personal-details li {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.personal-details li label, .form-section-4 label {
+    width: 100%;
+    text-align: start;
+    padding-block: 0.5rem;
+}
+
+.personal-details li .form-input, .form-section-4 textarea {
+    border-radius: 0.25rem;
+    border: solid 1px hsl(0, 0%, 67%);
+    color: var(--charcoal-grey);
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: border 50ms;
+    &:focus {
+        outline: none;
+        border: solid 1px var(--light-blue);
+    }
+}
+
+.form-section-4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 57%;
+}
+
+.form-section-4 textarea {
+    min-height: 13rem;
+    resize: none;
+}
+
+.submit-btn {
+    display: flex;
+    width: 100%;
+    font-size: var(--mid-captions);
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    margin-block: 2rem;
+    border: solid 1px var(--light-blue);
+    border-radius: 1rem;
+    background: var(--light-blue);
+    color: var(--white-text);
+    transition: all 200ms;
+    &:hover{
+        background-color: var(--dark-blue);
+        border: solid 1px var(--dark-blue);
+        cursor: pointer;
+    }
+}
+
+.form-disclaimer {
+    width: 100%;
+    max-width: 43rem;
+    text-align: start;
+    font-size: clamp(13px, 1.25vw, 14px);
+    padding-block: 1rem;
+}
+
+@media (max-width: 768px) {
+    .personal-details {
+        width: 100%;
+    }
+
+    .personal-details li {
+        max-width: 47%;
+    }
+
+    .form-section-4 {
+        width: 100%;
+    }
+}

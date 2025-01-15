@@ -1,0 +1,181 @@
+@import './main-styles.css';
+
+.navbar-wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    transition: all 400ms;
+}
+
+.navbar-wrapper.visible.opaque {
+    background-color: var(--white-text);
+}
+
+.navbar-wrapper.visible.filter {
+    background-color: transparent;
+}
+
+.navbar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 1.5rem 0.65rem;
+    column-gap: 2rem;
+}
+
+.navbar-container .logo-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-top: 0.25rem;
+}
+
+.navbar-container .logo-container h1 {
+    display: flex;
+    justify-content: start;
+    font-family: 'Funnel Display', sans-serif;
+    font-size: 24px;
+    color: var(--dark-grey);
+    max-width: var(--max-width);
+    margin-right: auto;
+}
+
+.navbar-container .logo-container img {
+    margin-right: 0.1rem;
+    height: 28px;
+    aspect-ratio: 1 / 1;
+}
+
+.navbar-container .primary-menu-list.visible {
+    display: flex;
+    flex-wrap: nowrap;
+    font-weight: 300;
+    list-style: none;
+    column-gap: clamp(0.5rem, 0.5vw, 1rem); 
+    color: hsla(0, 0%, 0%, 0.9);
+    font-size: var(--base-captions);
+    margin-right: 1rem;
+}
+
+.navbar-container .primary-menu-list.hidden {
+    display: none;
+    flex-wrap: nowrap;
+    font-weight: 300;
+    list-style: none;
+    column-gap: clamp(0.5rem, 0.5vw, 1rem); 
+    color: hsla(0, 0%, 0%, 0.9);
+    font-size: var(--base-captions);
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
+
+.label-container.top-label-container {
+    justify-self: center;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-menu-list .child-menu-item{
+    width: 100%;
+}
+
+.top-menu-item .top-label-container {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0.5rem;
+    /* margin-inline: 0.5rem; */
+    border-bottom: 2px solid transparent;
+    transition: border 400ms ease 100ms;
+    &:hover{
+        cursor: pointer;
+        border-bottom: 2px solid var(--light-blue);
+    }
+}
+
+.list-label-caret {
+    display: flex;
+    align-items: center;
+    padding-inline: 0.25rem;
+    margin-left: auto;
+}
+.list-label-caret svg{
+    transition: all 200ms ease;
+}
+
+.secondary-menu-list .child-menu-item {
+    color: hsla(0, 0%, 0%, 0.9);
+    font-weight: 300;
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 400ms;
+    &:hover {
+        font-weight: 500;
+        background: var(--light-blue);
+        color: var(--white-text);
+    }
+}
+
+.navbar-menu-item .secondary-menu-list {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 840px) {
+    .navbar-container:hover {
+        /* background: var(--dark-grey);
+        transition: all 200ms; */
+        flex-wrap: wrap;
+    }
+    /* .navbar-container:hover .navbar-menu-list.primary-menu-list{
+        display: flex;
+    } */
+    .navbar-menu-list.primary-menu-list.visible {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        font-weight: 500;
+    }
+    .secondary-menu-list .child-menu-item {
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-wrapper.visible.opaque {
+        background-color: hsla(0, 0%, 100%, 0.95);
+    }
+    .navbar-menu-list.primary-menu-list.visible {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    .navbar-menu-item.top-menu-item {
+        width: 100%;
+        border-radius: 0.25rem;
+        transition: all 400ms;
+        /* &:hover {
+            border-bottom: 2px solid hsla(0, 0%, 100%, 0.6);
+        } */
+    }
+    .label-container.top-label-container {
+        padding: 0.5rem 1rem;
+        text-align: center;
+        &:hover {
+            border-bottom: 2px solid transparent;
+            font-weight: 700;
+        }
+    }
+}

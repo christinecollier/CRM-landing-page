@@ -1,0 +1,66 @@
+@import './main-styles.css';
+
+.introduction-list {
+    display: flex;
+    justify-content: center;
+    gap: clamp(1rem, 2vw, 2.5rem);
+    /* gap: 1rem; */
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 100%;
+    max-width: var(--max-width);
+    /* padding-inline: 0.65rem; */
+    font-weight: 500;
+    margin-block: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+.introduction-list .intro-li-wrapper {
+    display: flex;
+    width: clamp(14rem, 30%, 28rem);
+    border-radius: 0.5rem;
+    width: 30%;
+}
+
+.intro-li-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--mid-captions);
+    padding-block: 1rem;
+    width: 100%;
+}
+
+.intro-li-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(3rem, 5vw, 3.25rem);
+    aspect-ratio: 1 / 1;
+    margin-block: 1rem;
+    position: relative;
+    background: var(--dark-blue);
+    border-radius: 50%;
+}
+
+.intro-li-img-container img {
+    width: clamp(22px, 2.5vw, 1.75rem);
+    aspect-ratio: 1 / 1;
+}
+
+.intro-li-container span {
+    font-size: var(--mid-captions);
+    padding: 1rem;
+    max-width: 16rem;
+}
+
+@media screen and (max-width: 768px) {
+    /* .introduction-list {
+        flex-direction: column;
+        align-items: center;
+    } */
+    
+    .introduction-list .intro-li-wrapper {
+        width: 45%;
+    }
+
+}

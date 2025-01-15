@@ -1,0 +1,70 @@
+@import './main-styles.css';
+
+.faqs-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: var(--light-grey);
+    color: var(--charcoal-grey);
+    padding-block: 2.5rem 3.5rem;
+    padding-inline: var(--side-padding);
+    /* border-bottom: 5px solid var(--opaque-mint-green); */
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 1rem;
+}
+
+.section-container h2 {
+    text-align: start;
+    width: 100%;
+}
+
+.faqs-accordion {
+    width: 100%;
+    margin-block: 1rem;
+}
+
+.faq-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 0.5rem;
+    width: 100%;
+    border-bottom: 1px dotted var(--charcoal-grey);
+}
+
+.faq-title h3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    padding-block: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: var(---mid-captions);
+}
+
+.faq-title p {
+    text-align: start;
+}
+
+.faq-caret {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-inline: 0.5rem;
+}
+
+.faq-content {
+    width: 100%;
+    text-align: start;
+    padding-block: 1rem 2rem;
+    font-weight: 300;
+    font-size: var(---base-captions);
+}
