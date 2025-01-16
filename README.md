@@ -36,7 +36,7 @@ A landing page for a fictional CRM company.<br>
 
 <br>
 
-<img src="./src/components/veridion/rdme-images/page_demo.bmp" alt="Demo screenshots showing page highlights" width="100%"/>
+<img src="./src/components/veridion/rdme-images/page_demo.png" alt="Demo screenshots showing page highlights" width="100%"/>
 <br>
-<img src="./src/components/veridion/rdme-images/device_mockup_collection.bmp" alt="Device mockup collection" width="100%"/><br>
+<img src="./src/components/veridion/rdme-images/device_mockup_collection.png" alt="Device mockup collection" width="100%"/><br>
 Individual device mockups from <a href="http://aygray.com/" target="_blank" rel='noopener noreferrer'>Andrew Gray</a> (<a href="https://creativecommons.org/licenses/by/4.0/" taget="blank">CC BY 4.0 license</a>)
