@@ -1,7 +1,7 @@
 import './styles/hero-styles.css';
-import crmDemo from './images/hero_images/mock_crm_sreenshot.bmp';
-import crmDemo_left from './images/hero_images/hero_tab_4.bmp';
-import crmDemo_right from './images/hero_images/hero_tab_3.bmp';
+import crmDemo from './images/hero_images/mock_crm_sreenshot.png';
+import crmDemo_left from './images/hero_images/hero_tab_4.png';
+import crmDemo_right from './images/hero_images/hero_tab_3.png';
 import GsapText from './gsap-typing-text';
 
 export default function Hero() {

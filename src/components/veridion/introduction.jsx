@@ -1,8 +1,8 @@
 import './styles/introduction-styles.css';
 import './styles/main-styles.css';
 import IntroductionList from './introduction-list';
-import tab1 from './images/intro_images/intro_tab_1.bmp'
-import tab2 from './images/intro_images/intro_tab_2.bmp'
+import tab1 from './images/intro_images/intro_tab_1.png'
+import tab2 from './images/intro_images/intro_tab_2.png'
 import GsapText from './gsap-typing-text';
 
 export default function Introduction() {

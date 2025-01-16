@@ -1,7 +1,7 @@
-import tab_1 from './images/product_bf_images/benefit_tab_1.bmp'
-import tab_2 from './images/product_bf_images/benefit_tab_2.bmp'
-import tab_3 from './images/product_bf_images/benefit_tab_3.bmp'
-import tab_4 from './images/product_bf_images/benefit_tab_4.bmp'
+import tab_1 from './images/product_bf_images/benefit_tab_1.png'
+import tab_2 from './images/product_bf_images/benefit_tab_2.png'
+import tab_3 from './images/product_bf_images/benefit_tab_3.png'
+import tab_4 from './images/product_bf_images/benefit_tab_4.png'
 
 // glassmorphism icons from Figma at (https://www.figma.com/community/file/1172337249143902190)
 
