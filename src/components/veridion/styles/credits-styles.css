@@ -113,9 +113,11 @@
 }
 
 @media (max-width: 480px) {
+    .software-container #react {
+        margin-left: 0;
+    }
     .software-container .myGithub{
-        margin-top: 1rem;
-        margin-right: 50%;
+        margin: 1rem 50% 0 0;
     }
 }
 
