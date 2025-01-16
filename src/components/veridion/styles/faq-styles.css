@@ -39,6 +39,10 @@
     border-bottom: 1px dotted var(--charcoal-grey);
 }
 
+.faq-title {
+    width: 100%;
+}
+
 .faq-title h3 {
     display: flex;
     align-items: center;
@@ -59,6 +63,7 @@
     align-items: center;
     cursor: pointer;
     padding-inline: 0.5rem;
+    margin-left: auto;
 }
 
 .faq-content {
